@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{7556DF73-E194-4A95-8475-EE60B539ED4E}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lune", "Lune\Lune.vcxproj", "{1908E499-8CAB-4D32-994B-550A9980EA1D}"
 EndProject
 Global
@@ -15,6 +17,10 @@ Global
 		{1908E499-8CAB-4D32-994B-550A9980EA1D}.Debug|x64.Build.0 = Debug|x64
 		{1908E499-8CAB-4D32-994B-550A9980EA1D}.Release|x64.ActiveCfg = Release|x64
 		{1908E499-8CAB-4D32-994B-550A9980EA1D}.Release|x64.Build.0 = Release|x64
+		{7556DF73-E194-4A95-8475-EE60B539ED4E}.Debug|x64.ActiveCfg = Debug|x64
+		{7556DF73-E194-4A95-8475-EE60B539ED4E}.Debug|x64.Build.0 = Debug|x64
+		{7556DF73-E194-4A95-8475-EE60B539ED4E}.Release|x64.ActiveCfg = Release|x64
+		{7556DF73-E194-4A95-8475-EE60B539ED4E}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
