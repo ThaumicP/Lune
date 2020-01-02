@@ -11,6 +11,11 @@ workspace "Lune"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Lune/vendor/GLFW/include"
+
+include "Lune/vendor/GLFW"
+
 project "Lune"
 	location "Lune"
 	kind "SharedLib"
@@ -32,7 +37,13 @@ project "Lune"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{prj.name}/src/Events"
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
@@ -80,8 +91,7 @@ project "Sandbox"
 	includedirs
 	{
 		"Lune/vendor/spdlog/include",
-		"Lune/src",
-		"Lune/src/Events"
+		"Lune/src"
 	}
 
 	links

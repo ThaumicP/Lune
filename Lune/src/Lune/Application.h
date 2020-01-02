@@ -2,6 +2,7 @@
 
 #include "Core.h"
 #include "Events/Event.h"
+#include "Window.h"
 
 namespace Lune
 {
@@ -9,12 +10,13 @@ namespace Lune
 	{
 	public:
 		Application();
-		~Application();
+		virtual ~Application();
 
-		bool Start();
-		bool Update();
 		void Run();
-		bool ErrorCatch(std::string msg);
+
+	private:
+		std::unique_ptr<Window> m_Window;
+		bool m_Running = true;
 	};
 
 	Application* CreateApplication();

@@ -12,6 +12,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Lune/Log.h"
 
 #ifdef LN_PLATFORM_WINDOWS
 	#include <Windows.h>
