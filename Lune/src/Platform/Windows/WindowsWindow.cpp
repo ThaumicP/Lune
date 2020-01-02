@@ -27,8 +27,8 @@ namespace Lune
 
 		if (!s_GLFWInitialized)
 		{
-			if (glfwInit());
-				LN_CORE_ERROR("Could not initialize GLFW!");
+			int success = glfwInit();
+			LN_CORE_ASSERT(success, "Could not initialize GLFW!");
 
 			s_GLFWInitialized = true;
 		}

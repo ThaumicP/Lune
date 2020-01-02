@@ -10,6 +10,16 @@
 	#error Lune only supports Windows!
 #endif
 
-#define BIT(x) (1 << x)
+#ifdef LN_DEBUG
+	#define LN_ENABLE_ASSERTS
+#endif
 
-#include <string>
+#ifdef LN_ENABLE_ASSERTS
+	#define LN_ASSERT(x, ...) { if(!(x)) { LN_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+	#define LN_CORE_ASSERT(x, ...) { if(!(x)) { LN_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+#else
+	#define LN_ASSERT(x, ...)
+	#define LN_CORE_ASSERT(x, ...)
+#endif
+
+#define BIT(x) (1 << x)
