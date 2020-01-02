@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Lune
 {
 	class LUNE_API MouseMovedEvent : public Event

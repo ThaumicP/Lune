@@ -19,6 +19,9 @@ project "Lune"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "lnpch.h"
+	pchsource "Lune/src/lnpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
@@ -27,8 +30,8 @@ project "Lune"
 
 	includedirs
 	{
-		"%{prj.name}/src"
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/src",
+		"%{prj.name}/vendor/spdlog/include",
 		"%{prj.name}/src/Events"
 	}
 

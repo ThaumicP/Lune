@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="Events">
+      <UniqueIdentifier>{3A8963B1-262B-8E87-0FE6-A1DBFB2615D8}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Lune">
       <UniqueIdentifier>{99BC887C-85F3-890D-2EE0-6F101AF6050F}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Lune\Events">
-      <UniqueIdentifier>{195422fe-1b49-487b-895c-443ce75cfc54}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Events\ApplicationEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Events\Event.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Events\KeyEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Events\MouseEvent.h">
+      <Filter>Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Lune.h" />
     <ClInclude Include="src\Lune\Application.h">
       <Filter>Lune</Filter>
@@ -22,22 +34,7 @@
     <ClInclude Include="src\Lune\Log.h">
       <Filter>Lune</Filter>
     </ClInclude>
-    <ClInclude Include="src\KeyEvent.h">
-      <Filter>Lune\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Event.h">
-      <Filter>Lune\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="src\MouseEvent.h">
-      <Filter>Lune\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="src\ApplicationEvent.h">
-      <Filter>Lune\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\Events\Event.h" />
-    <ClInclude Include="src\Events\KeyEvent.h" />
-    <ClInclude Include="src\Events\MouseEvent.h" />
+    <ClInclude Include="src\lnpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Lune\Application.cpp">
@@ -46,5 +43,6 @@
     <ClCompile Include="src\Lune\Log.cpp">
       <Filter>Lune</Filter>
     </ClCompile>
+    <ClCompile Include="src\lnpch.cpp" />
   </ItemGroup>
 </Project>

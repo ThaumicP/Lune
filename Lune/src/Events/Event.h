@@ -2,9 +2,6 @@
 
 #include "Lune/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Lune
 {
 	enum class EventType
