@@ -4,6 +4,9 @@
     <Filter Include="Lune">
       <UniqueIdentifier>{99BC887C-85F3-890D-2EE0-6F101AF6050F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Lune\Events">
+      <UniqueIdentifier>{195422fe-1b49-487b-895c-443ce75cfc54}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Lune.h" />
@@ -19,6 +22,22 @@
     <ClInclude Include="src\Lune\Log.h">
       <Filter>Lune</Filter>
     </ClInclude>
+    <ClInclude Include="src\KeyEvent.h">
+      <Filter>Lune\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Event.h">
+      <Filter>Lune\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MouseEvent.h">
+      <Filter>Lune\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ApplicationEvent.h">
+      <Filter>Lune\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Events\Event.h" />
+    <ClInclude Include="src\Events\KeyEvent.h" />
+    <ClInclude Include="src\Events\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Lune\Application.cpp">

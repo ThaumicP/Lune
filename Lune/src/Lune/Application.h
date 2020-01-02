@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Core.h"
+#include "Event.h"
 
 namespace Lune
 {
@@ -10,7 +11,10 @@ namespace Lune
 		Application();
 		~Application();
 
+		bool Start();
+		bool Update();
 		void Run();
+		bool ErrorCatch(std::string msg);
 	};
 
 	Application* CreateApplication();

@@ -27,7 +27,9 @@ project "Lune"
 
 	includedirs
 	{
+		"%{prj.name}/src"
 		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/src/Events"
 	}
 
 	filter "system:windows"
@@ -75,7 +77,8 @@ project "Sandbox"
 	includedirs
 	{
 		"Lune/vendor/spdlog/include",
-		"Lune/src"
+		"Lune/src",
+		"Lune/src/Events"
 	}
 
 	links

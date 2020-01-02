@@ -3,7 +3,7 @@
 #include <memory>
 #include "Core.h"
 #include "spdlog/spdlog.h"
-#include "spdlog/sinks/stdout_color_sinks.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace Lune
 {
@@ -22,14 +22,12 @@ namespace Lune
 }
 
 // Core Log Macros
-#define LN_CORE_FATAL(...) ::Lune::Log::GetCoreLogger()->fatal(__VA_ARGS__)
 #define LN_CORE_ERROR(...) ::Lune::Log::GetCoreLogger()->error(__VA_ARGS__)
 #define LN_CORE_WARN(...) ::Lune::Log::GetCoreLogger()->warn(__VA_ARGS__)
 #define LN_CORE_INFO(...) ::Lune::Log::GetCoreLogger()->info(__VA_ARGS__)
 #define LN_CORE_TRACE(...) ::Lune::Log::GetCoreLogger()->trace(__VA_ARGS__)
 
 // Client Log Macros
-#define LN_FATAL(...) ::Lune::Log::GetClientLogger()->fatal(__VA_ARGS__)
 #define LN_ERROR(...) ::Lune::Log::GetClientLogger()->error(__VA_ARGS__)
 #define LN_WARN(...) ::Lune::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define LN_INFO(...) ::Lune::Log::GetClientLogger()->info(__VA_ARGS__)
