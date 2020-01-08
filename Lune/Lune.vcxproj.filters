@@ -37,6 +37,12 @@
     <ClInclude Include="src\Lune\EntryPoint.h">
       <Filter>Lune</Filter>
     </ClInclude>
+    <ClInclude Include="src\Lune\Layer.h">
+      <Filter>Lune</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lune\LayerStack.h">
+      <Filter>Lune</Filter>
+    </ClInclude>
     <ClInclude Include="src\Lune\Log.h">
       <Filter>Lune</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Lune\Application.cpp">
+      <Filter>Lune</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Lune\Layer.cpp">
+      <Filter>Lune</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Lune\LayerStack.cpp">
       <Filter>Lune</Filter>
     </ClCompile>
     <ClCompile Include="src\Lune\Log.cpp">
