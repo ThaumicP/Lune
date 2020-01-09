@@ -1,6 +1,6 @@
 #pragma once
 #include "lnpch.h"
-#include "Core.h"
+#include "Lune/Core.h"
 
 namespace Lune {
 
