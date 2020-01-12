@@ -23,3 +23,6 @@
 #endif
 
 #define BIT(x) (1 << x)
+
+#define BIND_EVENT_FN(fn) std::bind(&fn, this, std::placeholders::_1)
+#define DISPATCH(d, e, fn) d.Dispatch<e>(BIND_EVENT_FN(fn));
