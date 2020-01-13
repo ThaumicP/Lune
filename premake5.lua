@@ -15,6 +15,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "Lune/vendor/GLFW/include"
 IncludeDir["Glad"] = "Lune/vendor/Glad/include"
 IncludeDir["ImGui"] = "Lune/vendor/imgui"
+IncludeDir["glm"] = "Lune/vendor/glm"
 
 include "Lune/vendor/GLFW"
 include "Lune/vendor/Glad"
@@ -34,7 +35,9 @@ project "Lune"
 	files
 	{
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl"
 	}
 
 	includedirs
@@ -43,7 +46,8 @@ project "Lune"
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
-		"%{IncludeDir.ImGui}"
+		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links
@@ -103,7 +107,8 @@ project "Sandbox"
 	includedirs
 	{
 		"Lune/vendor/spdlog/include",
-		"Lune/src"
+		"Lune/src",
+		"%{IncludeDir.glm}"
 	}
 
 	links
