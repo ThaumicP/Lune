@@ -108,7 +108,8 @@ project "Sandbox"
 	{
 		"Lune/vendor/spdlog/include",
 		"Lune/src",
-		"%{IncludeDir.glm}"
+		"%{IncludeDir.glm}",
+		"Lune/vendor"
 	}
 
 	links

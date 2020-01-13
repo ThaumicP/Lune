@@ -1,21 +1,33 @@
 #include "lnpch.h"
 #include <Lune.h>
 
-#include "MyLayers.h"
+#include "imgui/imgui.h"
 
-class Sandbox : public Lune::Application
+class ExampleLayer : public Lune::Layer
 {
 public:
-	Sandbox()
+	ExampleLayer() : Layer("Example") {}
+
+	virtual void OnImGuiRender() override
+	{
+		ImGui::Begin("Test");
+		ImGui::Text("Hello World!");
+		ImGui::End();
+	}
+};
+
+class ClientApplication : public Lune::Application
+{
+public:
+	ClientApplication()
 	{
 		PushLayer(new ExampleLayer());
-		PushOverlay(new Lune::ImGuiLayer());
 	}
 
-	~Sandbox() {}
+	~ClientApplication() {}
 };
 
 Lune::Application* Lune::CreateApplication()
 {
-	return new Sandbox();
+	return new ClientApplication();
 }
