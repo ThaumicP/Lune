@@ -161,11 +161,13 @@
     <ClInclude Include="src\Lune\Application.h" />
     <ClInclude Include="src\Lune\Core.h" />
     <ClInclude Include="src\Lune\EntryPoint.h" />
+    <ClInclude Include="src\Lune\Input.h" />
     <ClInclude Include="src\Lune\Layer.h" />
     <ClInclude Include="src\Lune\LayerStack.h" />
     <ClInclude Include="src\Lune\Log.h" />
     <ClInclude Include="src\Lune\Window.h" />
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\lnpch.h" />
   </ItemGroup>
@@ -176,6 +178,7 @@
     <ClCompile Include="src\Lune\LayerStack.cpp" />
     <ClCompile Include="src\Lune\Log.cpp" />
     <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\lnpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
