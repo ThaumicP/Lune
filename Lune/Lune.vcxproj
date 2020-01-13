@@ -162,9 +162,11 @@
     <ClInclude Include="src\Lune\Core.h" />
     <ClInclude Include="src\Lune\EntryPoint.h" />
     <ClInclude Include="src\Lune\Input.h" />
+    <ClInclude Include="src\Lune\KeyCodes.h" />
     <ClInclude Include="src\Lune\Layer.h" />
     <ClInclude Include="src\Lune\LayerStack.h" />
     <ClInclude Include="src\Lune\Log.h" />
+    <ClInclude Include="src\Lune\MouseButtonCodes.h" />
     <ClInclude Include="src\Lune\Window.h" />
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />

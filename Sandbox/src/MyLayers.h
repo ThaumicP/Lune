@@ -6,8 +6,17 @@ public:
 	ExampleLayer()
 		: Layer("Example") {}
 
-	void OnEvent(Lune::Event& e) override
+	void OnUpdate() override
 	{
 
+	}
+
+	void OnEvent(Lune::Event& event) override
+	{
+		if (event.GetEventType() == Lune::EventType::KeyPressed)
+		{
+			Lune::KeyPressedEvent& e = (Lune::KeyPressedEvent&)event;
+			LN_TRACE("You pressed [{0}]", (char)e.GetKeyCode());
+		}
 	}
 };

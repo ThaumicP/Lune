@@ -67,6 +67,8 @@
     <ClInclude Include="src\lnpch.h" />
     <ClInclude Include="src\Lune\Input.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
+    <ClInclude Include="src\Lune\KeyCodes.h" />
+    <ClInclude Include="src\Lune\MouseButtonCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ImGui\ImGuiLayer.cpp">

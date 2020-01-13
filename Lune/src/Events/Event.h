@@ -49,9 +49,7 @@ namespace Lune {
 	{
 	public:
 		EventDispatcher(Event& event)
-			: m_Event(event)
-		{
-		}
+			: m_Event(event) {}
 
 		template<typename T, typename F>
 		bool Dispatch(const F& func)

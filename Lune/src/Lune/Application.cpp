@@ -1,6 +1,6 @@
 #include "lnpch.h"
 #include "Application.h"
-#include "Input.h"
+#include "Lune/Input.h"
 #include <glad/glad.h>
 
 namespace Lune
@@ -35,9 +35,9 @@ namespace Lune
 		EventDispatcher dispatcher(e);
 		DISPATCH(dispatcher, WindowCloseEvent, Application::OnWindowClose);
 
-		for (auto it = m_LayerStack.end(); it != m_LayerStack.begin();)
+		for (auto it = m_LayerStack.begin(); it != m_LayerStack.end(); ++it)
 		{
-			(*--it)->OnEvent(e);
+			(*it)->OnEvent(e);
 			if (e.Handled)
 				break;
 		}
