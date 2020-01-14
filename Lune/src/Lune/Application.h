@@ -9,7 +9,7 @@
 
 namespace Lune
 {
-	class LUNE_API Application
+	class Application
 	{
 	public:
 		Application();

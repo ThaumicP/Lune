@@ -6,7 +6,7 @@
 
 namespace Lune
 {
-	class LUNE_API Log
+	class Log
 	{
 	public:
 		static void Init();

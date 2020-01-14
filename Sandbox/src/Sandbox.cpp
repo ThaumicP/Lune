@@ -8,12 +8,7 @@ class ExampleLayer : public Lune::Layer
 public:
 	ExampleLayer() : Layer("Example") {}
 
-	virtual void OnImGuiRender() override
-	{
-		ImGui::Begin("Test");
-		ImGui::Text("Hello World!");
-		ImGui::End();
-	}
+
 };
 
 class ClientApplication : public Lune::Application

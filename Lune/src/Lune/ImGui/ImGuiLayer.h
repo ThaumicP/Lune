@@ -2,13 +2,13 @@
 
 #include "Lune/Layer.h"
 
-#include "Events/ApplicationEvent.h"
-#include "Events/KeyEvent.h"
-#include "Events/MouseEvent.h"
+#include "Lune/Events/ApplicationEvent.h"
+#include "Lune/Events/KeyEvent.h"
+#include "Lune/Events/MouseEvent.h"
 
 namespace Lune
 {
-	class LUNE_API ImGuiLayer : public Layer
+	class ImGuiLayer : public Layer
 	{
 	public:
 		ImGuiLayer();

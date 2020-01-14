@@ -10,6 +10,6 @@
 #include "Lune/MouseButtonCodes.h"
 #include "Lune/KeyCodes.h"
 
-#include "ImGui/ImGuiLayer.h"
+#include "Lune/ImGui/ImGuiLayer.h"
 
 #include "Lune/EntryPoint.h"

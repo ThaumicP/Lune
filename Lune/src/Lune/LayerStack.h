@@ -5,7 +5,7 @@
 
 namespace Lune
 {
-	class LUNE_API LayerStack
+	class LayerStack
 	{
 	public:
 		LayerStack();

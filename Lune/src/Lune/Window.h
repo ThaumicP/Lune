@@ -16,7 +16,7 @@ namespace Lune
 			: Title(title), Width(width), Height(height) {}
 	};
 
-	class LUNE_API Window
+	class Window
 	{
 	public:
 		using EventCallbackFn = std::function<void(Event&)>;
